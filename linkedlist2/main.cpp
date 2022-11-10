@@ -9,7 +9,31 @@ class Node{
 };
 
 Node *input(Node* head, int d){
+    Node *ptr=head;
+    Node *temp= new Node();
+    temp->data=d;
+    temp->next=NULL;
+    while(ptr->next!=NULL){
+        ptr = ptr->next;
+    }
+    ptr->next=temp;
+    return head;
+}
+
+void printlist(Node* root){
+    while(root!=NULL){
+        cout<<root->data<<"->";
+        root=root->next;
+    }
+}
+
+Node *insert_begin(Node* root, int d){
+    Node* ptr= new Node();
+    ptr->data=d;
+    ptr->next=root;
     
+    root=ptr;
+    return root;
 }
 
 int main() {
@@ -29,7 +53,7 @@ int main() {
         cin>>temp;
         head= input(head, temp);
     }
-    
+    printlist(head);
     
     
 	return 0;

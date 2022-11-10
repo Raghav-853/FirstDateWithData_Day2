@@ -3,9 +3,9 @@
   <Project Name="pointer001" Path="pointer001/pointer001.project" Active="No"/>
   <Project Name="pointer002" Path="pointer002/pointer002.project" Active="No"/>
   <Project Name="pointer003" Path="pointer003/pointer003.project" Active="No"/>
-  <Project Name="pointer004" Path="pointer004/pointer004.project" Active="Yes"/>
-  <Project Name="linkedlist" Path="linkedlist/linkedlist.project"/>
-  <Project Name="linkedlist2" Path="linkedlist2/linkedlist2.project"/>
+  <Project Name="pointer004" Path="pointer004/pointer004.project" Active="No"/>
+  <Project Name="linkedlist" Path="linkedlist/linkedlist.project" Active="No"/>
+  <Project Name="linkedlist2" Path="linkedlist2/linkedlist2.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
